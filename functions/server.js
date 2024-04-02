@@ -6,6 +6,15 @@ const sqlite3 = require('sqlite3').verbose();
 const app = express();
 const port = 3000;
 
+app.get('/api/dados', (req, res) => {
+  const dados = {
+    mensagem: 'Dados recebidos com sucesso do backend!',
+    outroCampo: 'Outro dado importante'
+  };
+
+  res.json(dados);
+});
+
 app.use(express.urlencoded({ extended: false }));
 app.use(session({ secret: 'ipf129u342hf8he8fh8he0fhe4e3frg', resave: false, saveUninitialized: true }));
 app.use(express.static(path.join(__dirname, '../frontend')));
