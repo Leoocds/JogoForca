@@ -1,0 +1,179 @@
+@font-face {
+  font-family: "Jogo";
+  src: url(fonte/Bangers-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Palavras";
+  src: url(fonte/Fredoka-VariableFont_wdth\,wght.ttf);
+}
+
+@font-face {
+  font-family: "Teclado";
+  src: url(fonte/LilitaOne-Regular.ttf);
+}
+
+body {
+  background-image: radial-gradient(#062750,#05131d)
+}
+
+.container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.container p {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  font-size: 2em;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.topo {
+  justify-content: right;
+  text-align: right;
+  padding: 2px;
+}
+
+.topo a {
+  margin-right: 10px;
+}
+
+.forca-img {
+  background-image: url("imagem/forca.png");
+  margin: 20px auto;
+  width: 234px;
+  height: 272px;
+}
+
+.palavras {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  margin: 25px auto;
+  font-size: 30px;
+}
+
+.erros {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  margin-top: 10px;
+  font-size: 18px;
+  color: #fff;
+}
+
+.tentativas {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: #fff;
+  margin: 5px auto;
+  font-size: 18px;
+  display: none;
+}
+
+.teclas {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.teclas button {
+  width: 40px;
+  height: 40px; 
+  padding: 5px;
+  text-align: center;
+  margin: 5px 5px;
+  font-size: 24px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  background-color: #4d94ff;
+  cursor: pointer;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: #ffffff;
+  transition: transform 0.4s ease;
+}
+
+.teclado button:hover {
+  background-color: #0400ff;
+  transform: scale(1.2);
+}
+
+.teclado button:active {
+  background-color: #bbb;
+}
+
+#controle button {
+  width: 60px;
+  height: 40px;
+  padding: 5px;
+  font-size: 24px;
+  margin: 5px 5px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  background-color: #4d94ff;
+  cursor: pointer;
+  transition: transform 0.4s ease;
+}
+
+#controle button:hover {
+  background-color: #0400ff;
+  transform: scale(1.2);
+}
+
+.categoria {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  margin: 10px 0px 15px 0;
+  font-size: 22px;
+  color: #ffffff;
+}
+
+.perdeu-texto {
+  color: rgb(255, 35, 35);
+}
+
+.ganhou-texto {
+  color: rgb(0, 252, 0);
+}
+
+@media screen and (max-width: 782px) {
+  body {
+    font-size: 14px;
+  }
+
+  #controle button {
+  width: 50px;
+  height: 30px;
+  font-size: 24px;
+  margin: 5px 5px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  background-color: #1eff00;
+  cursor: pointer;
+  transition: transform 0.4s ease;
+  }
+
+  .teclas button {
+  width: 30px;
+  height: 30px; 
+  text-align: center;
+  margin: 5px 5px;
+  font-size: 24px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  background-color: #1eff00;
+  cursor: pointer;
+  font-family: "Teclado";
+  font-weight: bold;
+  text-shadow: -2px 2px #000;
+  color: #ffffff;
+  transition: transform 0.4s ease;
+  }
+}
+
+
+  
+  

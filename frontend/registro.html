@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" type="text/css" href="css/registro.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="registro-form">
+            <div class="topo">
+                <a class="paginainicial" href="index.html">🠔</a>
+            </div>
+            <div class="titulo">
+                <h2>Crie sua conta!</h2>
+            </div>
+            <form action="/registro" method="POST">
+                <div class="campotexto">
+                    <input type="text" id="nome" name="nome" placeholder="Nome" required>
+                </div>
+                <div class="campotexto">
+                    <input type="text" id="nome_usuario" name="nome_usuario" placeholder="Usuário" required>
+                </div>
+                <div class="campotexto">
+                    <input type="password" id="senha" name="senha" placeholder="Senha" required>
+                </div>
+                <div class="botao">
+                    <button type="submit" class="botao-registro">Register</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="scripts/scriptregistro.js"></script>
+</body>
+
+</html>

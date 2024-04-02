@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Teste suas habilidades no clássico jogo da forca e descubra se você consegue adivinhar a palavra antes de esgotar suas tentativas!">
+  <title>Jogo da Forca</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" href="../backend/node_modules/sweetalert2/dist/sweetalert2.min.css">
+</head>
+
+<body>
+  <span id="nome_usuario"></span>
+  <div class="container">
+    <p>JOGO DA FORCA</p>
+    <div id="forca-img" class="forca-img"></div>
+    <div id="palavras" class="palavras"></div>
+    <div id="categoria" class="categoria">Categoria: </div>
+    <div id="tentativas" class="tentativas"></div>
+    <div id="erros" class="erros">Letras erradas:</div>
+    <div id="teclado" class="teclado">
+      <div class="teclas">
+        <button onclick="selecionarLetra('a')">A</button>
+        <button onclick="selecionarLetra('b')">B</button>
+        <button onclick="selecionarLetra('c')">C</button>
+        <button onclick="selecionarLetra('d')">D</button>
+        <button onclick="selecionarLetra('e')">E</button>
+        <button onclick="selecionarLetra('f')">F</button>
+        <button onclick="selecionarLetra('g')">G</button>
+        <button onclick="selecionarLetra('h')">H</button>
+        <button onclick="selecionarLetra('i')">I</button>
+      </div>
+
+      <div class="teclas">
+        <button onclick="selecionarLetra('j')">J</button>
+        <button onclick="selecionarLetra('k')">K</button>
+        <button onclick="selecionarLetra('l')">L</button>
+        <button onclick="selecionarLetra('m')">M</button>
+        <button onclick="selecionarLetra('n')">N</button>
+        <button onclick="selecionarLetra('o')">O</button>
+        <button onclick="selecionarLetra('p')">P</button>
+        <button onclick="selecionarLetra('q')">Q</button>
+        <button onclick="selecionarLetra('r')">R</button>
+      </div>
+
+      <div class="teclas">
+        <button onclick="selecionarLetra('s')">S</button>
+        <button onclick="selecionarLetra('t')">T</button>
+        <button onclick="selecionarLetra('u')">U</button>
+        <button onclick="selecionarLetra('v')">V</button>
+        <button onclick="selecionarLetra('w')">W</button>
+        <button onclick="selecionarLetra('x')">X</button>
+        <button onclick="selecionarLetra('y')">Y</button>
+        <button onclick="selecionarLetra('z')">Z</button>
+      </div>
+      <div class="controle" id="controle">
+        <button onclick="reiniciarJogo('🎮')">🎮</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="scripts/scriptjogo.js"></script>
+  <script src="scripts/scriptlogin.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+</html> 
+
+

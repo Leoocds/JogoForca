@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: radial-gradient(#0081a8dc, #24495a);
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.topo a {
+    color: #ecf0f1;
+    background-color: transparent;
+    font-size: 40px;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+    display: inline-block;
+}
+
+.topo a:hover {
+    transform: scale(1.2);
+}
+
+.registro-form {
+    width: 50%;
+    padding: 30px;
+    background-image: linear-gradient(#0081a8dc, #24495a);
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #000000;
+}
+
+.registro-form h2 {
+    color: #ffffff;
+    font-weight: 800;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.campotexto {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.campotexto input {
+    width: 50%;
+    border: none;
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 15px;
+    background: #ffffff;
+    color: #000000;
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px #00000056;
+    outline: none;
+}
+
+.botao {
+    text-align: center;
+    align-items: center;
+}
+
+.botao-registro {
+    width: 50%;
+    padding: 16px 0;
+    margin-top: 25px;
+    align-content: center;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    background: #0dffeb;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.botao-registro:hover {
+    background-color: #01795f; 
+}
+
+.final-registro {
+    padding: 2px;
+    margin-top: 30px;
+    text-align: center;
+    justify-content: center;
+}
+
+.final-registro p {
+    font-weight: bold;
+}
+
+.final-registro a {
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.final-registro a:hover {
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 768px) {
+    .registro-form {
+        width: 80%;
+    }
+}
