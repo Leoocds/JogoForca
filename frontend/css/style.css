@@ -139,6 +139,15 @@ body {
   color: rgb(0, 252, 0);
 }
 
+.eu p {
+  font-size: 14px; 
+}
+
+.eu a {
+  color: #ff5e00;
+  text-decoration: none;
+}
+
 @media screen and (max-width: 782px) {
   body {
     font-size: 14px;
