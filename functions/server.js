@@ -67,6 +67,10 @@ app.get('/palavras', (req, res) => {
   });
 });
 
+app.get("/", (req, res) => {
+  return res.json("Olá");
+});
+
 app.listen(port, () => {
   console.log(`Servidor rodando em http://localhost:${port}`);
 });
