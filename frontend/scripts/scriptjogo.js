@@ -1,3 +1,15 @@
+const BASE_URL = 'https://jogo-forca-one.vercel.app';
+
+fetch(`${BASE_URL}/categorias`)
+  .then(response => response.json())
+  .then(categorias => console.log(categorias))
+  .catch(error => console.error('Erro ao obter categorias:', error));
+
+fetch(`${BASE_URL}/palavras`)
+  .then(response => response.json())
+  .then(palavras => console.log(palavras))
+  .catch(error => console.error('Erro ao obter palavras:', error));
+
 let categoriaEscolhida = {};
 let palavraEscolhida = "";
 let letrasCorretas = new Set();
