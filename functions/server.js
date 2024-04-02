@@ -2,6 +2,7 @@ const express = require('express');
 const session = require('express-session');
 const path = require('path');
 const sqlite3 = require('sqlite3').verbose();
+const cors = require('cors');
 
 const app = express();
 const port = 3000;
@@ -18,6 +19,7 @@ app.get('/api/dados', (req, res) => {
 app.use(express.urlencoded({ extended: false }));
 app.use(session({ secret: 'ipf129u342hf8he8fh8he0fhe4e3frg', resave: false, saveUninitialized: true }));
 app.use(express.static(path.join(__dirname, '../frontend')));
+app.use(cors());
 
 const dbPath = path.join(__dirname, '../jogodaforca.db');
 const db = new sqlite3.Database(dbPath, sqlite3.OPEN_READWRITE, (err) => {
