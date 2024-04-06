@@ -34,14 +34,16 @@ function escolherPalavraAleatoria(palavrasDaCategoria) {
 function exibirPalavra() {
   let exibicao = "";
   for (const letra of palavraEscolhida) {
-    if (letrasCorretas.has(letra)) {
+    if (letra === " ") {
+      exibicao += "\xa0"; 
+    } else if (letrasCorretas.has(letra)) {
       exibicao += letra;
     } else {
       exibicao += "_";
     }
-    exibicao += " ";
+    exibicao += "\xa0"; 
   }
-  palavras.textContent = exibicao;
+  palavras.innerHTML = exibicao; 
   return exibicao;
 }
 
