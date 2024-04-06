@@ -21,7 +21,7 @@ const db = new sqlite3.Database(dbPath, sqlite3.OPEN_READWRITE, (err) => {
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/', (req, res) => {
-  res.redirect('https://jogo-forca-vert.vercel.app');
+  res.redirect('https://jogoforca-6f6f73905699.herokuapp.com');
 });
 
 process.on('SIGINT', () => {
