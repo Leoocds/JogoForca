@@ -9,7 +9,7 @@ const PORT = process.env.PORT || 3000;
 app.use(express.urlencoded({ extended: false }));
 app.use(session({ secret: 'ipf129u342hf8he8fh8he0fhe4e3frg', resave: false, saveUninitialized: true }));
 
-const dbPath = path.join(__dirname, './jogodaforca.db');
+const dbPath = path.join(__dirname, 'jogo da forca', 'jogodaforca.db');
 const db = new sqlite3.Database(dbPath, sqlite3.OPEN_READWRITE, (err) => {
   if (err) {
     console.error(err.message);
