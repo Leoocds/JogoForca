@@ -9,7 +9,6 @@ const port = 3000;
 
 app.use(express.urlencoded({ extended: false }));
 app.use(session({ secret: 'ipf129u342hf8he8fh8he0fhe4e3frg', resave: false, saveUninitialized: true }));
-app.use(express.static(path.join(__dirname, '../frontend')));
 app.use(flash());
 
 const dbPath = path.join(__dirname, '../jogodaforca.db');
