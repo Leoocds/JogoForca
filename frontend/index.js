@@ -2,22 +2,26 @@ const express = require('express');
 const session = require('express-session');
 const path = require('path');
 const sqlite3 = require('sqlite3').verbose();
-const flash = require('express-flash');
 
 const app = express();
-const port = 3000;
+const PORT = process.env.PORT || 3000;
 
 app.use(express.urlencoded({ extended: false }));
 app.use(session({ secret: 'ipf129u342hf8he8fh8he0fhe4e3frg', resave: false, saveUninitialized: true }));
-app.use(flash());
 
-const dbPath = path.join(__dirname, '../jogodaforca.db');
+const dbPath = path.join(__dirname, './jogodaforca.db');
 const db = new sqlite3.Database(dbPath, sqlite3.OPEN_READWRITE, (err) => {
   if (err) {
     console.error(err.message);
   } else {
     console.log('Conectado ao banco de dados');
   }
+});
+
+app.use(express.static(path.join(__dirname, 'public')));
+
+app.get('/', (req, res) => {
+  res.redirect('https://jogo-forca-vert.vercel.app');
 });
 
 process.on('SIGINT', () => {
@@ -53,14 +57,9 @@ app.get('/palavras', (req, res) => {
   });
 });
 
-app.get('/', (req, res) => {
-  res.send('Bem-vindo! <a href="/registro">Registrar</a> ou <a href="/login">Entrar</a>');
+app.listen(PORT, () => {
+    console.log(`Server is running on port ${PORT}`);
 });
-
-app.listen(port, () => {
-  console.log(`Servidor rodando em http://localhost:${port}`);
-});
-
 
 
 
