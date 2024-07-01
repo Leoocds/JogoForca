@@ -29,26 +29,6 @@ ngrok http 3000
 O ngrok fornecerá uma URL pública que você pode usar para acessar o jogo da forca no navegador.
 
 ## Estrutura do Projeto
-
-jogo-da-forca/
-│
-├── backend/
-│   ├── node_modules/
-│   ├── public/
-│   │   ├── css/
-│   │   │   └── style.css
-│   │   ├── imagem/
-│   │   ├── scripts/
-│   │   │   ├── scriptjogo.js
-│   │   │   └── scriptlogin.js
-│   │   └── index.html
-│   ├── jogodaforca.db
-│   ├── package.json
-│   ├── server.js
-│   └── README.md
-└──
-
-
 public/ contém os arquivos estáticos (CSS, imagens e scripts).
 
 jogodaforca.db é o banco de dados SQLite que armazena as categorias e palavras.
