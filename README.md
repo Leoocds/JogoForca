@@ -1,12 +1,11 @@
-Jogo da Forca
+# Jogo da Forca
 Este é um jogo da forca desenvolvido em Node.js com um backend utilizando Express.js e um banco de dados SQLite. O frontend é uma aplicação web simples que permite aos jogadores adivinharem palavras categorizadas.
 
-Pré-requisitos
+## Pré-requisitos
 Certifique-se de ter o Node.js instalado em sua máquina antes de executar o jogo.
 
-Instalação
+## Instalação
 Clone este repositório em sua máquina local:
-
 bash
 Copiar código
 git clone https://github.com/Leoocds/jogo-forca/
@@ -23,8 +22,7 @@ npm install
 Execução
 Para iniciar o servidor e jogar o jogo da forca, siga os passos abaixo:
 
-Inicie o servidor Node.js:
-
+## Inicie o servidor Node.js:
 bash
 Copiar código
 npm start
@@ -35,7 +33,7 @@ Copiar código
 ngrok http 3000
 O ngrok fornecerá uma URL pública que você pode usar para acessar o jogo da forca no navegador.
 
-Estrutura do Projeto
+## Estrutura do Projeto
 java
 Copiar código
 jogo-da-forca/
