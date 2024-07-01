@@ -8,17 +8,14 @@ Certifique-se de ter o Node.js instalado em sua máquina antes de executar o jog
 Clone este repositório em sua máquina local: 
 
 
-Copiar código
-git clone https://github.com/Leoocds/jogo-forca/
+Copiar código 'git clone https://github.com/Leoocds/jogo-forca/'
+
 Navegue até o diretório do projeto:
 
-
-Copiar código
 cd jogo-da-forca
+
 Instale as dependências do projeto:
 
-
-Copiar código
 npm install
 
 ## Execução
@@ -27,9 +24,6 @@ Para iniciar o servidor e jogar o jogo da forca, siga os passos abaixo:
 npm start
 
 Em outra janela do terminal, inicie o ngrok para expor o servidor local:
-
-
-Copiar código
 
 ngrok http 3000
 
