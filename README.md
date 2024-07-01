@@ -35,6 +35,4 @@ jogodaforca.db é o banco de dados SQLite que armazena as categorias e palavras.
 
 server.js é o arquivo principal do servidor Express.js.
 
-Configuração do Banco de Dados
-
 O banco de dados SQLite (jogodaforca.db) contém tabelas para categorias e palavras. Certifique-se de adicionar suas palavras e categorias diretamente no banco de dados.
