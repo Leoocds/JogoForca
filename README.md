@@ -21,17 +21,19 @@ Instale as dependências do projeto:
 
 Copiar código
 npm install
-Execução
+
+## Execução
 Para iniciar o servidor e jogar o jogo da forca, siga os passos abaixo:
 
-## Inicie o servidor Node.js:
-Copiar código
 npm start
+
 Em outra janela do terminal, inicie o ngrok para expor o servidor local:
 
 
 Copiar código
+
 ngrok http 3000
+
 O ngrok fornecerá uma URL pública que você pode usar para acessar o jogo da forca no navegador.
 
 ## Estrutura do Projeto
