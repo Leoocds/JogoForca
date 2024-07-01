@@ -8,7 +8,6 @@ Certifique-se de ter o Node.js instalado em sua máquina antes de executar o jog
 Clone este repositório em sua máquina local: 
 
 
-bash
 Copiar código
 git clone https://github.com/Leoocds/jogo-forca/
 Navegue até o diretório do projeto:
