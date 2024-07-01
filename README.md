@@ -11,20 +11,20 @@ Clone este repositório em sua máquina local:
 
 Navegue até o diretório do projeto:
 
-cd jogo-da-forca
+"cd jogo-da-forca"
 
 Instale as dependências do projeto:
 
-npm install
+"npm install"
 
 ## Execução
 Para iniciar o servidor e jogar o jogo da forca, siga os passos abaixo:
 
-npm start
+"npm start"
 
 Em outra janela do terminal, inicie o ngrok para expor o servidor local:
 
-ngrok http 3000
+"ngrok http 3000"
 
 O ngrok fornecerá uma URL pública que você pode usar para acessar o jogo da forca no navegador.
 
